@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: ???
+  Bugfixes:
+    - Inventory size with tiers enabled were too big
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 20-03-2020
+  Changes:
+    - Settings were surrounded by quotes
+    - Higher tiers are now unlocked by separate techs
+  Bugfixes:
+    - Allow robot deployment when in automatic mode #48
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 22.02.2020
+  Changes:
+    - Added option to allow higher tiers of trains
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2020-02-09
+  Changes:
+    - update to 0.18
+    - put smelting train under angel logistics when angelsindustries is present
+    - changed the weight of the smelting wagon (1500 instead of 1000)

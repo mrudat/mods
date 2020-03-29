@@ -1,0 +1,14 @@
+{
+  "name": "angelsaddons-vehicles",
+  "version": "0.1.0",
+  "factorio_version": "0.18",
+  "title": "Angel's Addons - Vehicles",
+  "author": "Arch666Angel",
+  "contact": "",
+  "homepage": "",
+  "description": "Adds multiple vehicles",
+  "dependencies": [
+    "base >= 0.18.0",
+    "? WagonColors"
+  ]
+}
