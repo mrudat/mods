@@ -46,10 +46,9 @@ end
 -- PETROCHEM
 if angelsmods.petrochem then
   data.raw["item"]["angels-pressure-tank-1"].subgroup = "angels-fluid-tanks"
+  data.raw["technology"]["pressure-tanks"].prerequisites = {"angels-fluid-control"}
 
   if bobmods and bobmods.logistics then
     data.raw["item"]["angels-pressure-tank-1"].order = "c[large-tank]-d[jax35]"
   end
-else
-  data.raw["technology"]["pressure-tanks"].prerequisites = {"fluid-handling"}
 end

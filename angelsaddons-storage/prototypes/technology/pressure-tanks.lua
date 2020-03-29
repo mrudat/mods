@@ -6,7 +6,7 @@ data:extend(
       icon = "__angelsaddons-storage__/graphics/technology/pressure-tank.png",
       icon_size = 128,
       prerequisites = {
-        "angels-fluid-control"
+        "fluid-handling"
       },
       effects = {
         {
