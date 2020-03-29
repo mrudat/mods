@@ -41,3 +41,15 @@ if angelsmods.industries then
     data.raw["item-subgroup"]["angels-warehouses"].order = "ad[chests-warehouse]"
   end
 end
+
+--OVERRIDE FOR ANGELS
+-- PETROCHEM
+if angelsmods.petrochem then
+  data.raw["item"]["angels-pressure-tank-1"].subgroup = "angels-fluid-tanks"
+
+  if bobmods and bobmods.logistics then
+    data.raw["item"]["angels-pressure-tank-1"].order = "c[large-tank]-d[jax35]"
+  end
+else
+  data.raw["technology"]["pressure-tanks"].prerequisites = {"fluid-handling"}
+end

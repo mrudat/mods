@@ -6,7 +6,7 @@ data:extend(
     icon = "__angelsaddons-storage__/graphics/icons/pressuretank/pressure-tank-1.png",
     icon_size = 32,
     subgroup = "angels-fluid-tanks",
-    order = "e",
+    order = "b[fluid]-a[storage-tank]-a[angels]",
     place_result = "angels-pressure-tank-1",
     stack_size = 10,
   },
