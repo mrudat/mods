@@ -1,30 +1,22 @@
-if angelsmods and angelsmods.refining then
+if angelsmods.refining then
+  local group = "resource-refining"
+  if angelsmods.industries then
+    group = "angels-logistics"
+  end
+
   if angelsmods.addons.storage.oresilos then
     angelsmods.functions.OV.add_prereq("ore-silos", "ore-crushing")
-    data.raw["item-subgroup"]["angels-silos"].group = "resource-refining"
-    if angelsmods.logistics then
-      data.raw["item-subgroup"]["angels-silos"].group = "angels-logistics"
+    data.raw["item-subgroup"]["angels-silos"].group = group
+    if angelsmods.industries then
+      data.raw["item-subgroup"]["angels-silos"].order = "ac[chests-silo]"
     end
   end
 
   if angelsmods.addons.storage.warehouses then
-    data.raw["item-subgroup"]["angels-warehouses"].group = "resource-refining"
-
-    if angelsmods.logistics then
-      data.raw["item-subgroup"]["angels-warehouses"].group = "angels-logistics"
+    data.raw["item-subgroup"]["angels-warehouses"].group = group
+    if angelsmods.industries then
+      data.raw["item-subgroup"]["angels-warehouses"].order = "ad[chests-warehouse]"
     end
-  end
-end
-
-if angelsmods.industries then
-  if angelsmods.addons.storage.oresilos then
-    data.raw["item-subgroup"]["angels-silos"].group = "angels-logistics"
-    data.raw["item-subgroup"]["angels-silos"].order = "ac[chests-silo]"
-  end
-
-  if angelsmods.addons.storage.warehouses then
-    data.raw["item-subgroup"]["angels-warehouses"].group = "angels-logistics"
-    data.raw["item-subgroup"]["angels-warehouses"].order = "ad[chests-warehouse]"
   end
 end
 
