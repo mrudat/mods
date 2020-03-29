@@ -17,12 +17,12 @@ if angelsmods and angelsmods.refining then
 end
 
 if angelsmods.industries then
-  if angelsmods.addons.oresilos then
+  if angelsmods.addons.storage.oresilos then
     data.raw["item-subgroup"]["angels-silos"].group = "angels-logistics"
     data.raw["item-subgroup"]["angels-silos"].order = "ac[chests-silo]"
   end
 
-  if angelsmods.addons.warehouses then
+  if angelsmods.addons.storage.warehouses then
     data.raw["item-subgroup"]["angels-warehouses"].group = "angels-logistics"
     data.raw["item-subgroup"]["angels-warehouses"].order = "ad[chests-warehouse]"
   end
