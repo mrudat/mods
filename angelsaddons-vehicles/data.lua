@@ -5,6 +5,7 @@ angelsmods.addons.vehicles.enable_tiers = settings.startup["angelsaddons-vehicle
 angelsmods.addons.vehicles.tier_amount = settings.startup["angelsaddons-vehicles-tier-amount"].value
 angelsmods.addons.vehicles.smeltingtrain = settings.startup["angelsaddons-vehicles-enable-smeltingtrains"].value
 angelsmods.addons.vehicles.petrotrain = settings.startup["angelsaddons-vehicles-enable-petrotrains"].value
+angelsmods.addons.vehicles.crawlertrain = settings.startup["angelsaddons-vehicles-enable-crawlertrains"].value
 angelsmods.addons.vehicles.number_tint = {r = 1, g = 0.38, b = 0, a = 1}
 
 tech_unlocks = {}
@@ -21,6 +22,14 @@ if angelsmods.addons.vehicles.petrotrain then
   require("prototypes.entities.petrotrain")
   require("prototypes.recipes.petrotrain")
   require("prototypes.technology.petrotrain")
+end
+
+if angelsmods.addons.vehicles.crawlertrain then
+  require("prototypes.equipment-grid")
+  require("prototypes.entities.crawlertrain")
+  require("prototypes.entities.crawlerwagon")
+  require("prototypes.recipes.crawlertrain")
+  require("prototypes.technology.crawlertrain")
 end
 
 tech_unlocks = nil

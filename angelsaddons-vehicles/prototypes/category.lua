@@ -22,6 +22,18 @@ data:extend(
       name = "angels-smeltingtrain",
       group = "logistics",
       order = "zb"
-    }
+    },
+    {
+      type = "item-subgroup",
+      name = "angels-crawler-train",
+      group = mods.angelsindustries and "angels-vehicles" or "logistics",
+      order = "fa"
+    },
+    {
+      type = "item-subgroup",
+      name = "angels-vehicle-train-crawler",
+      group = mods.angelsindustries and "angels-vehicles" or "logistics",
+      order = "bb[crawler-train]" -- order bc reserved for smeltingtrain (see addon data-update)
+    } -- order bd reserved for petrotrain (see addon data-update)
   }
 )
