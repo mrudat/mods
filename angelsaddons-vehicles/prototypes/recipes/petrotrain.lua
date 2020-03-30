@@ -6,7 +6,7 @@ funcs.generate_train_recipe(
 		type = "recipe",
 		name = "petro-locomotive-1",
 		energy_required = 10,
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{"engine-unit", 20},
 			{"steel-plate", 75},
@@ -23,7 +23,7 @@ funcs.generate_train_recipe(
 		type = "recipe",
 		name = "petro-tank1",
 		energy_required = 10,
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{"storage-tank", 3},
 			{"steel-plate", 50},
@@ -40,7 +40,7 @@ funcs.generate_train_recipe(
 		type = "recipe",
 		name = "petro-tank2",
 		energy_required = 10,
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{"storage-tank", 3},
 			{"steel-plate", 50},
