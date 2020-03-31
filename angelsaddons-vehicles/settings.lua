@@ -50,6 +50,19 @@ data:extend(
       setting_type = "startup",
       default_value = true,
       order = "g"
+    },
+    {
+      type = "int-setting",
+      name = "angelsaddons-vehicle-cab-energy-transfer-rate-mk1",
+      localised_name = {
+        "mod-setting-name.angelsaddons-vehicle-cab-energy-transfer-rate",
+        {"equipment-name.angels-cab-energy-interface", "MK1"}
+      },
+      localised_description = {"mod-setting-description.angelsaddons-vehicle-cab-energy-transfer-rate", "500 000"},
+      setting_type = "startup",
+      minimum_value = 1,
+      default_value = 500000, --500 kW
+      order = "g-a[transfer-rate]-a[mk1]"
     }
   }
 )

@@ -34,6 +34,27 @@ data:extend(
       name = "angels-vehicle-train-crawler",
       group = mods.angelsindustries and "angels-vehicles" or "logistics",
       order = "bb[crawler-train]" -- order bc reserved for smeltingtrain (see addon data-update)
-    } -- order bd reserved for petrotrain (see addon data-update)
+    },
+    --EQUIPMENT CATEGORY
+    {
+      type = "equipment-category",
+      name = "angels-cab"
+    },
+    --AMMO CATEGORY
+    {
+      type = "ammo-category",
+      name = "angels-cab-deploy"
+    },
+    {
+      type = "ammo-category",
+      name = "angels-cab-undeploy"
+    },
+    --SUBGROUPS
+    {
+      type = "item-subgroup",
+      name = "angels-cab",
+      group = mods.angelsindustries and "angels-vehicles" or "logistics",
+      order = mods.angelsindustries and "da" or "zc"
+    }
   }
 )

@@ -101,6 +101,16 @@ if angelsmods.industries then
     data.raw["item-subgroup"]["angels-crawler-train"].group = "angels-vehicles"
     data.raw["item-subgroup"]["angels-crawler-train"].order = "bc[crawler-train]"
   end
+
+  if angelsmods.addons.vehicles.cab then
+    update_grid(
+      "angels-cab",
+      {
+        "angels-cab",
+        "angels-energy"
+      }
+    )
+  end
 end
 
 if mods["bobvehicleequipment"] then

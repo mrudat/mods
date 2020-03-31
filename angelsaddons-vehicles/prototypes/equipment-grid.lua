@@ -1,3 +1,4 @@
+
 data:extend(
   {
     {
@@ -27,6 +28,15 @@ data:extend(
       width = 12,
       height = 12,
       equipment_categories = {"angels-void"}
+    },
+    {
+      type = "equipment-grid",
+      name = "angels-cab",
+      width = 12,
+      height = 24,
+      equipment_categories = {
+        "angels-void"
+      }
     }
   }
 )
