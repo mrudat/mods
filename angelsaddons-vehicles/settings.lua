@@ -34,7 +34,7 @@ data:extend(
       type = "bool-setting",
       name = "angelsaddons-vehicles-enable-crawlertrains",
       setting_type = "startup",
-      default_value = true,
+      default_value = mods.angelsindustries and true or false,
       order = "e"
     },
     {
@@ -48,7 +48,7 @@ data:extend(
       type = "bool-setting",
       name = "angelsaddons-vehicles-enable-cab",
       setting_type = "startup",
-      default_value = true,
+      default_value = mods.angelsindustries and false or true,
       order = "g"
     },
     {
