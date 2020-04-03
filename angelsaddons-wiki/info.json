@@ -1,0 +1,14 @@
+{
+  "name": "angelsaddons-wiki",
+  "version": "0.1.0",
+  "factorio_version": "0.18",
+  "title": "Angel's Addons - Ingame Wiki",
+  "author": "Arch666Angel",
+  "contact": "",
+  "homepage": "https://forums.factorio.com/viewtopic.php?f=185&t=30962",
+  "description": "",
+  "dependencies": [
+    "base >= 0.18.0",
+    "Booktorio >= 1.0.0"
+  ]
+}
