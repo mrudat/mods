@@ -1,8 +1,7 @@
-local prefix = "gui.angelswiki.angelsaddons-warehouses.topic-main-"
-local size = "gui.angelswiki.angelsaddons-warehouses.topic-size"
-
 return {
   init = function()
+    local prefix = "gui.angelswiki.angelsaddons-warehouses.topic-main-"
+    local size = "gui.angelswiki.angelsaddons-warehouses.topic-size"
     local name = "angels-warehouse"
     -- Roundabout way to get inventory size
     local inv_size = game.entity_prototypes[name].get_inventory_size(defines.inventory.chest)

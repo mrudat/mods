@@ -1,12 +1,13 @@
 local threads = {}
 local function addThread(mod, thread)
-  if thread  and table_size(thread) > 0 then
+  if thread and table_size(thread) > 0 then
     threads[mod] = thread
   end
 end
 
 addThread("angelsaddons-cab", require("wiki.angelsaddons-cab"))
 addThread("angelsaddons-warehouses", require("wiki.angelsaddons-warehouses"))
+addThread("angelsbioprocessing", require("wiki.angelsbioprocessing"))
 
 local function registerThread()
   if remote.interfaces["Booktorio"] then
