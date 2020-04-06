@@ -8,6 +8,7 @@ end
 addThread("angelsaddons-cab", require("wiki.angelsaddons-cab"))
 addThread("angelsaddons-warehouses", require("wiki.angelsaddons-warehouses"))
 addThread("angelsbioprocessing", require("wiki.angelsbioprocessing"))
+addThread("angelsaddons-wiki", require("wiki.angelsaddons-wiki"))
 
 local function registerThread()
   if remote.interfaces["Booktorio"] then
