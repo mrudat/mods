@@ -3,6 +3,7 @@ return {
   specified_version = 0,
   topics = {
     require("wiki.angelsbioprocessing.main"),
-    require("wiki.angelsbioprocessing.vegetablis")
+    require("wiki.angelsbioprocessing.vegetablis"),
+    require("wiki.angelsbioprocessing.animalis")
   }
 }
