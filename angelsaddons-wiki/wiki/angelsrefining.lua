@@ -3,5 +3,6 @@ return {
   specified_version = 0,
   topics = {
     require("wiki.angelsrefining.main"),
+    require("wiki.angelsrefining.ore-refining")
   }
 }

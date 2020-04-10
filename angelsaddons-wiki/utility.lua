@@ -1,3 +1,8 @@
+local function item_to_name_with_icon(name, item_type)
+  item_type = item_type or "item"
+
+  return {"", "[" .. item_type .. "=" .. name .. "]", {item_type .. "-name." .. name}}
+end
 local function list_to_string(list, item_amount)
   local count = table_size(list)
   local result = {""}
@@ -42,6 +47,9 @@ local utility = {
       return {""}
     end
     return list_to_string(recipe.ingredients, item_amount)
+  end,
+  name_to_icon_and_name = function(name, item_type)
+    return item_to_name_with_icon(name, item_type)
   end
 }
 
