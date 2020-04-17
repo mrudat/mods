@@ -32,25 +32,33 @@ local function list_to_string(list, item_amount)
   end
   return result
 end
-
-local utility = {
-  products_from_recipe = function(recipe_name, item_amount)
-    local recipe = game.recipe_prototypes[recipe_name]
-    if not recipe then
-      return {""}
-    end
-    return list_to_string(recipe.products, item_amount)
-  end,
-  ingredients_from_recipe = function(recipe_name, item_amount)
-    local recipe = game.recipe_prototypes[recipe_name]
-    if not recipe then
-      return {""}
-    end
-    return list_to_string(recipe.ingredients, item_amount)
-  end,
-  name_to_icon_and_name = function(name, item_type)
-    return item_to_name_with_icon(name, item_type)
+local utility = {}
+function utility.products_from_recipe(recipe_name, item_amount)
+  local recipe = game.recipe_prototypes[recipe_name]
+  if not recipe then
+    return {""}
   end
-}
+  return list_to_string(recipe.products, item_amount)
+end
+function utility.ingredients_from_recipe(recipe_name, item_amount)
+  local recipe = game.recipe_prototypes[recipe_name]
+  if not recipe then
+    return {""}
+  end
+  return list_to_string(recipe.ingredients, item_amount)
+end
+function utility.name_to_icon_and_name(name, item_type)
+  return item_to_name_with_icon(name, item_type)
+end
+function utility.is_petro()
+  return game.active_mods.angelspetrochem
+end
+function utility.is_overhaul()
+  return game.active_mods.bobplates or
+    (game.active_mods.angelsindustries and settings.startup["angels-enable-industries"].value)
+end
+function utility.is_special_vanilla()
+  return not utility.is_petro() and not utility.is_overhaul()
+end
 
 return utility

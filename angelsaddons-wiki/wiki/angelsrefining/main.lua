@@ -1,3 +1,4 @@
+local utility = require("utility")
 return {
   init = function()
     local prefix = "gui.angelswiki.angelsrefining.topic-main-"
@@ -16,7 +17,7 @@ return {
       get_line_from_name("angels-ore2")
     }
 
-    if (settings.startup["angels-enable-tech"].value or game.active_mods["bobplates"]) then
+    if (utility.is_overhaul()) then
       table.insert(items, get_line_from_name("angels-ore6"))
       table.insert(items, get_line_from_name("angels-ore5"))
     end

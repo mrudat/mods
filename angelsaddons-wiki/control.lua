@@ -13,6 +13,7 @@ addThread("angelsaddons-wiki", require("wiki.angelsaddons-wiki"))
 
 local function registerThread()
   if remote.interfaces["Booktorio"] then
+    remote.call("Booktorio", "remove_thread", "gui.bk-wiki-name")
     for mod, thread in pairs(threads) do
       if game.active_mods[mod] then
         -- process ingame data
