@@ -364,10 +364,7 @@ function add_minable_results()
   local function combiner(ingredients)
     local ret = {}
     for _, row in pairs(ingredients) do
-      if ret[row.name] == nil then
-        ret[row.name] = 0
-      end
-      ret[row.name] = ret[row.name] + row.amount
+      ret[row.name] = (ret[row.name] or 0) + row.amount
     end
 
     local combined = {}
