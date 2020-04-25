@@ -743,19 +743,3 @@ function replace_con_mats(buildings)
     end
   end
 end
---REPLACE ON MINED RESULTS
-function replace_minable_results(buildings)
-  for assembly_check, build in pairs(data.raw[buildings]) do
-    if data.raw.recipe[assembly_check] then
-      local rec_check = data.raw.recipe[assembly_check]
-      if rec_check.normal then
-        ing_list = rec_check.normal.ingredients
-      else
-        ing_list = rec_check.ingredients
-      end
-      if data.raw[build.type][assembly_check].minable then
-        data.raw[build.type][assembly_check].minable.results = ing_list
-      end
-    end
-  end
-end
